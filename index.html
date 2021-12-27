@@ -8,8 +8,30 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Library</h1>
-    <button>NEW BOOK</button>
+    <h1 class="title">Library</h1>
+    <button class="btn-open">Add Book</button>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="index.html" class="form">
+                <label for="title">Title: </label>
+                <input class="input" name="title" type="text" placeholder="Enter title..." required>
+                <label for="author">Author: </label>
+                <input class="input" name="author" type="text" placeholder="Enter author..." required>
+                <label for="pages">Pages: </label>
+                <input class="input" name="pages" type="text" placeholder="Enter number of pages..." required>
+                <div class="read-input">
+                    <label for="read">Read Book: </label>
+                    <input name="read" type="checkbox">
+                </div>
+                <div class="btn-submit">
+                    <input class="submit" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="book-container"></div>
 
     <script src="./script.js"></script>
